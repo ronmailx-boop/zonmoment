@@ -93,6 +93,11 @@ private fun Ready(settings: UserSettings, state: HomeState.Ready) {
     DaySection(stringResource(R.string.tomorrow), state.tomorrow, isToday = false)
 
     val today = LocalDate.now(AMSTERDAM)
+    // Day-ahead prices for tomorrow are published around 13:00–14:00; until then tomorrow is planned on sun only.
+    val tomorrowHasPrices = state.forecast.hours.any { it.start.toLocalDate() == today.plusDays(1) && it.priceEurPerKwh != null }
+    if (settings.dynamicContract && state.forecast.pricesAvailable && !tomorrowHasPrices) {
+        Text(stringResource(R.string.tomorrow_prices_later), style = MaterialTheme.typography.bodySmall)
+    }
     Text(stringResource(R.string.chart_title), style = MaterialTheme.typography.titleMedium)
     listOf(today, today.plusDays(1)).forEach { day ->
         val hours = state.forecast.hours.filter { it.start.toLocalDate() == day && it.start.hour in 6..21 }

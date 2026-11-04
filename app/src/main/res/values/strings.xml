@@ -55,6 +55,7 @@
     <string name="refresh">Vernieuwen</string>
     <string name="loading">Voorspelling laden…</string>
     <string name="prices_unavailable">Stroomprijzen zijn nu niet beschikbaar. We plannen alleen op zon.</string>
+    <string name="tomorrow_prices_later">Stroomprijzen voor morgen komen rond 14:00. Tot dan plannen we morgen alleen op zon.</string>
 
     <!-- Notifications -->
     <string name="notification_channel">Dagelijks advies</string>

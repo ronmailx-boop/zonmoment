@@ -27,7 +27,9 @@
 - [x] GitHub Actions: בדיקות, Lint ו-APK. מ-`main` מתפרסם גם release בשם `latest`
 - [x] מדיניות פרטיות (NL/EN)
 - [x] **בדיקה בטלפון אמיתי**: מותקן ועובד
-- [ ] לאמת את פורמט ה-API העדכני של EnergyZero (‏`interval=4`, שדות `Prices[].price` ו-`readingDate`)
+- [x] לאמת את פורמט ה-API העדכני של EnergyZero (‏`interval=4`, שדות `Prices[].price` ו-`readingDate`) — אומת מול השרתים האמיתיים ב-4.11.2026, כולל PDOK ו-Open-Meteo
+- [x] בדיקה חיה `LiveApiTest` (רצה רק עם `ZONMOMENT_LIVE=1`) ו-workflow שבועי "Live API check"
+- [x] הודעה כשמחירי מחר עוד לא פורסמו (מתפרסמים בסביבות 14:00)
 - [ ] לבדוק את תנאי השימוש המסחרי של Open-Meteo, ובמידת הצורך לעבור למנוי בתשלום או ל-Forecast.Solar
 - [ ] לפרסם את מדיניות הפרטיות בכתובת ציבורית (GitHub Pages או Cloudflare)
 

@@ -1,0 +1,25 @@
+# Weekly check that PDOK, Open-Meteo and EnergyZero still answer in the format the app expects.
+# A red run here means an API changed before users start seeing errors.
+name: Live API check
+
+on:
+  schedule:
+    - cron: "17 11 * * 1" # Mondays 11:17 UTC, after EnergyZero has today's prices
+  workflow_dispatch:
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Run live API test
+        env:
+          ZONMOMENT_LIVE: "1"
+        run: ./gradlew testDebugUnitTest --tests '*LiveApiTest*'

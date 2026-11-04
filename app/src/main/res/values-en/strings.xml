@@ -50,6 +50,7 @@
     <string name="refresh">Refresh</string>
     <string name="loading">Loading forecast…</string>
     <string name="prices_unavailable">Electricity prices are unavailable right now. Planning on sun only.</string>
+    <string name="tomorrow_prices_later">Tomorrow\'s electricity prices are published around 14:00. Until then tomorrow is planned on sun only.</string>
 
     <string name="notification_channel">Daily advice</string>
     <string name="notification_channel_description">Every morning the best moment for your appliances.</string>
