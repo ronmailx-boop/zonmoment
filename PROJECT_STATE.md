@@ -36,9 +36,11 @@ Zonmoment נמצאת ב-Google Play במסלול בדיקה פנימית (versio
 - [x] האתר נפרס ל-Cloudflare (Worker `zonmoment`, גם `zonmoment.ronmailx.workers.dev`) — 4.11.2026
 - [x] מדיניות פרטיות ופרטי קשר הוזנו ב-Play Console (ידנית — ה-API לא תומך בשדה הפרטיות)
 - [x] טקסטים לדף החנות בהולנדית: `store/listing-nl.md` / `store/listing-nl.json`
-- [ ] ה-API מחזיר 403 ב-commit של שינויי דף חנות/פרטי קשר (commit ריק עובר). לבדוק את הרשאת "ניהול הנוכחות בחנות" של חשבון השירות; בינתיים מעתיקים ידנית
+- [ ] ה-API מחזיר 403 על כל שינוי אמיתי בדף החנות (commit ללא שינוי עובר; ב-AgeFox, שכבר הוגשה, זה עובד). כנראה נפתח אחרי ההגשה הראשונה — לבדוק שוב אז
+- [ ] טפסי App content: התשובות ב-`store/play-forms.md`, המשתמש ממלא
 
 ### לפני ההשקה ב-Play
+- [x] התמונות הועלו ידנית ל-Play Console ונשמרו כטיוטה (4.11.2026). ה-API חוסם שינויים בדף החנות עד ההגשה הראשונה
 - [x] אייקון חדש (שמש זורחת), Feature graphic ו-4 צילומי מסך בהולנדית: `store/images/`. נוצרים מהמסכים האמיתיים: `ZONMOMENT_SCREENSHOTS=1 ROBOLECTRIC_REPO_URL=<mirror> ./gradlew testDebugUnitTest --tests "*StoreScreenshots*"`
 - [ ] האייקון החדש נכנס לאפליקציה רק בגרסה הבאה (versionCode 2)
 - [x] האפליקציה נוצרה ב-Play Console, ול-`agefox-play@red-grid-513513-t6.iam.gserviceaccount.com` יש הרשאה (בדיקה, דף חנות). אומת מה-API ב-4.11.2026
