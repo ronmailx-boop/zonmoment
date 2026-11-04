@@ -34,7 +34,9 @@ Zonmoment נמצאת ב-Google Play במסלול בדיקה פנימית (versio
 - [ ] לבדוק את תנאי השימוש המסחרי של Open-Meteo, ובמידת הצורך לעבור למנוי בתשלום או ל-Forecast.Solar
 - [x] מדיניות פרטיות מולאה (vplus studio, vplusstudio.app@gmail.com) ונבנה אתר `site/` (index + privacy) עם פריסה ל-Cloudflare → `https://zonmoment.vplusstudio.app/privacy`
 - [x] האתר נפרס ל-Cloudflare (Worker `zonmoment`, גם `zonmoment.ronmailx.workers.dev`) — 4.11.2026
-- [ ] להזין `https://zonmoment.vplusstudio.app/privacy` ב-Play Console (App content → Privacy policy)
+- [x] מדיניות פרטיות ופרטי קשר הוזנו ב-Play Console (ידנית — ה-API לא תומך בשדה הפרטיות)
+- [x] טקסטים לדף החנות בהולנדית: `store/listing-nl.md` / `store/listing-nl.json`
+- [ ] ה-API מחזיר 403 ב-commit של שינויי דף חנות/פרטי קשר (commit ריק עובר). לבדוק את הרשאת "ניהול הנוכחות בחנות" של חשבון השירות; בינתיים מעתיקים ידנית
 
 ### לפני ההשקה ב-Play
 - [ ] אייקון סופי וצילומי מסך לחנות בהולנדית
