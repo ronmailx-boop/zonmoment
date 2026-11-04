@@ -28,10 +28,14 @@ private val DarkColors = darkColorScheme(
 )
 
 @Composable
-fun ZonmomentTheme(content: @Composable () -> Unit) {
-    val dark = isSystemInDarkTheme()
+fun ZonmomentTheme(
+    dark: Boolean = isSystemInDarkTheme(),
+    // Off for the store screenshots, which must show the brand colours rather than a wallpaper palette.
+    dynamicColor: Boolean = true,
+    content: @Composable () -> Unit,
+) {
     val colors = when {
-        Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
+        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
             val ctx = LocalContext.current
             if (dark) dynamicDarkColorScheme(ctx) else dynamicLightColorScheme(ctx)
         }

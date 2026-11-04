@@ -44,6 +44,15 @@ android {
     buildFeatures {
         compose = true
     }
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
+        unitTests.all { test ->
+            // Store screenshots run only on request: ZONMOMENT_SCREENSHOTS=1 ./gradlew testDebugUnitTest --tests '*StoreScreenshots*'
+            if (System.getenv("ZONMOMENT_SCREENSHOTS") != "1") test.exclude("**/StoreScreenshots*")
+            test.systemProperty("zonmoment.screenshot.dir", rootProject.file("store/images").absolutePath)
+            System.getenv("ROBOLECTRIC_REPO_URL")?.let { test.systemProperty("robolectric.dependency.repo.url", it) }
+        }
+    }
 }
 
 kotlin {
@@ -68,4 +77,9 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     // Real org.json for JVM unit tests (Android's copy is a stub there).
     testImplementation("org.json:json:20240303")
+    // Store screenshots: renders the real Compose screens on the JVM.
+    testImplementation("org.robolectric:robolectric:4.17")
+    testImplementation(composeBom)
+    testImplementation("androidx.compose.ui:ui-test-junit4")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
