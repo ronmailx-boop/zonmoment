@@ -1,8 +1,9 @@
 # PROJECT_STATE: Zonmoment
 
 ## Current Focus
-ה-MVP מוזג ל-`main`, הותקן בטלפון ועובד (אושר על ידי המשתמש ב-4.11.2026). ה-APK זמין ב-Releases → latest.
-**הצעד הבא:** לבחור את השלב הבא: בדיקה עם משתמשים הולנדים, Pro בתשלום, או הכנה לחנות.
+Zonmoment נמצאת ב-Google Play במסלול בדיקה פנימית (versionCode 1), הותקנה מהחנות ועובדת (4.11.2026).
+החיבור ל-Play API עובד דרך חשבון השירות `agefox-play@...` (משתני הסביבה `GOOGLE_PLAY_CLIENT_EMAIL` / `GOOGLE_PLAY_PRIVATE_KEY`).
+**הצעד הבא:** הכנה לפרסום ב-Production: דף חנות בהולנדית, צילומי מסך, מדיניות פרטיות בכתובת ציבורית, טפסים (אבטחת מידע, דירוג תוכן, קהל יעד).
 
 ## החלטות
 - **אפליקציית אנדרואיד נייטיב** (Kotlin + Jetpack Compose), כדי שההתראה של הבוקר תעבוד בלי שרת (WorkManager).
@@ -37,8 +38,10 @@
 - [ ] אייקון סופי וצילומי מסך לחנות בהולנדית
 - [x] האפליקציה נוצרה ב-Play Console, ול-`agefox-play@red-grid-513513-t6.iam.gserviceaccount.com` יש הרשאה (בדיקה, דף חנות). אומת מה-API ב-4.11.2026
 - [x] workflow "Release build" בונה AAB חתום (versionCode = מספר הריצה), נבדק מקומית עם מפתח זמני
-- [ ] מפתח העלאה: ליצור ב-Termux ולשמור 4 Secrets (`ANDROID_KEYSTORE_BASE64`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`, `ANDROID_KEYSTORE_PASSWORD`)
-- [ ] להעלות ידנית את ה-AAB הראשון ל-Internal testing (חובה באפליקציה חדשה)
+- [x] מפתח העלאה (PKCS12, נוצר ב-Termux עם openssl כי keytool לא עובד שם): נוצר ולשמור 4 Secrets (`ANDROID_KEYSTORE_BASE64`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`, `ANDROID_KEYSTORE_PASSWORD`)
+- [x] versionCode 1 הועלה ידנית ל-Internal testing (רשימת בודקים "Ron"), הותקן מהחנות ועובד (4.11.2026)
+- [ ] סקריפט העלאה דרך ה-API (כמו `store/play_upload.py` בריפו ben-kama-ani-hayom), כדי שהגרסאות הבאות יעלו מכאן
+- [ ] סמלי ניפוי באגים ל-native (`ndk.debugSymbolLevel`) כדי לסגור את האזהרה ב-Play
 - [ ] Pro: תשלום דרך Google Play Billing (‏€1.99 לחודש או €14.99 לשנה)
 - [ ] לבדוק את הטקסטים ההולנדיים עם דובר הולנדית
 
