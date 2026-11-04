@@ -1,0 +1,8 @@
+// Cloudflare Workers: serves the website in site/ as static assets (no Worker script).
+{
+  "name": "zonmoment",
+  "compatibility_date": "2026-11-04",
+  "assets": { "directory": "site" },
+  "workers_dev": true,
+  "routes": [{ "pattern": "zonmoment.vplusstudio.app", "custom_domain": true }]
+}

@@ -1,10 +1,10 @@
 # Privacybeleid Zonmoment / Privacy Policy Zonmoment
 
-_Laatst bijgewerkt / Last updated: [DATUM / DATE]_
+_Laatst bijgewerkt / Last updated: 4 november 2026 / 4 November 2026_
 
 ## Nederlands
 
-Zonmoment wordt aangeboden door **[NAAM ORGANISATIE]**, [ADRES], [E-MAILADRES] ("wij").
+Zonmoment wordt aangeboden door **vplus studio**, vplusstudio.app@gmail.com ("wij").
 
 **Welke gegevens?** Je vult je postcode, het aantal zonnepanelen, het vermogen per paneel, de richting van je dak,
 je soort energiecontract en je apparaten in. Deze gegevens worden **alleen op je telefoon** opgeslagen. Wij hebben
@@ -21,11 +21,11 @@ geen analytics en geen tracking.
 **Meldingen.** Als je toestemming geeft, toont de app elke ochtend een melding. Deze wordt op je telefoon zelf gemaakt.
 
 **Je rechten.** Je kunt je gegevens op elk moment wissen door de app-gegevens te wissen of de app te verwijderen.
-Vragen? Mail naar [E-MAILADRES]. Je kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens.
+Vragen? Mail naar vplusstudio.app@gmail.com. Je kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens.
 
 ## English
 
-Zonmoment is provided by **[ORGANISATION NAME]**, [ADDRESS], [EMAIL] ("we").
+Zonmoment is provided by **vplus studio**, vplusstudio.app@gmail.com ("we").
 
 **What data?** You enter your postcode, number of solar panels, watt peak per panel, roof direction, energy contract
 type and appliances. This data is stored **only on your phone**. We have no server, no account system and no access to it.
@@ -40,4 +40,4 @@ As with any internet connection, these services receive your IP address. We use 
 **Notifications.** If you allow it, the app shows a notification every morning. It is created on your phone.
 
 **Your rights.** You can delete your data at any time by clearing the app data or uninstalling the app.
-Questions? Email [EMAIL]. You may also lodge a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens).
+Questions? Email vplusstudio.app@gmail.com. You may also lodge a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens).
