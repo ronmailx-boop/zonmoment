@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Zonmoment</string>
+
+    <!-- Setup -->
+    <string name="setup_title">Jouw zonnepanelen</string>
+    <string name="setup_intro">Vul dit één keer in. Alles blijft op je telefoon.</string>
+    <string name="postcode">Postcode</string>
+    <string name="postcode_hint">bijv. 1012 AB</string>
+    <string name="panel_count">Aantal panelen</string>
+    <string name="watt_peak">Wattpiek per paneel</string>
+    <string name="roof_direction">Richting van het dak</string>
+    <string name="dynamic_contract">Ik heb een dynamisch energiecontract</string>
+    <string name="dynamic_contract_help">Dan houden we ook rekening met de stroomprijs per uur.</string>
+    <string name="appliances">Welke apparaten wil je plannen?</string>
+    <string name="save">Opslaan</string>
+    <string name="cancel">Annuleren</string>
+    <string name="saving">Even zoeken…</string>
+
+    <string name="roof_south">Zuid</string>
+    <string name="roof_south_east">Zuidoost</string>
+    <string name="roof_south_west">Zuidwest</string>
+    <string name="roof_east">Oost</string>
+    <string name="roof_west">West</string>
+    <string name="roof_east_west">Oost-West</string>
+
+    <string name="appliance_washing_machine">Wasmachine</string>
+    <string name="appliance_dishwasher">Vaatwasser</string>
+    <string name="appliance_dryer">Droger</string>
+    <string name="appliance_ev">Elektrische auto</string>
+
+    <!-- Validation and errors -->
+    <string name="error_postcode_format">Vul een geldige postcode in, bijv. 1012 AB.</string>
+    <string name="error_postcode_unknown">Deze postcode kennen we niet. Controleer hem even.</string>
+    <string name="error_panels">Vul een aantal panelen in tussen 1 en 200.</string>
+    <string name="error_wp">Vul een wattpiek in tussen 100 en 800.</string>
+    <string name="error_appliances">Kies minstens één apparaat.</string>
+    <string name="error_network">Geen verbinding. Controleer je internet en probeer opnieuw.</string>
+    <string name="error_data">De voorspelling kon niet worden geladen. Probeer het later opnieuw.</string>
+    <string name="retry">Opnieuw proberen</string>
+
+    <!-- Home -->
+    <string name="system_summary">%1$s · %2$s kWp · %3$s</string>
+    <string name="today">Vandaag</string>
+    <string name="tomorrow">Morgen</string>
+    <string name="best_moment">Beste moment</string>
+    <string name="solar_share">☀️ ca. %1$d%% zonnestroom</string>
+    <string name="no_window">Vandaag geen geschikt moment meer.</string>
+    <string name="little_sun">Weinig zon verwacht. Dit is het beste moment, maar reken op stroom van het net.</string>
+    <string name="chart_title">Verwachte opwek per uur</string>
+    <string name="chart_description">Maximaal %1$s kW om %2$s</string>
+    <string name="chart_legend_prices">Lijn: stroomprijs (marktprijs incl. btw)</string>
+    <string name="forecast_disclaimer">Dit is een voorspelling op basis van het weer, geen meting.</string>
+    <string name="settings">Instellingen</string>
+    <string name="refresh">Vernieuwen</string>
+    <string name="loading">Voorspelling laden…</string>
+    <string name="prices_unavailable">Stroomprijzen zijn nu niet beschikbaar. We plannen alleen op zon.</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel">Dagelijks advies</string>
+    <string name="notification_channel_description">Elke ochtend het beste moment voor je apparaten.</string>
+    <string name="notification_title">Beste moment vandaag ☀️</string>
+    <string name="notification_line">%1$s: %2$s–%3$s (ca. %4$d%% zon)</string>
+    <string name="notification_none">Vandaag weinig zon verwacht.</string>
+</resources>
