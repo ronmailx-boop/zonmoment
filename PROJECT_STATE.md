@@ -32,7 +32,9 @@
 - [x] לאמת את פורמט ה-API העדכני של EnergyZero (‏`interval=4`, שדות `Prices[].price` ו-`readingDate`) — אומת מול השרתים האמיתיים ב-4.11.2026, כולל PDOK ו-Open-Meteo
 - [x] בדיקה חיה `LiveApiTest` (רצה רק עם `ZONMOMENT_LIVE=1`) ו-workflow שבועי "Live API check"
 - [x] הודעה כשמחירי מחר עוד לא פורסמו (מתפרסמים בסביבות 14:00)
-- [ ] לבדוק את תנאי השימוש המסחרי של Open-Meteo, ובמידת הצורך לעבור למנוי בתשלום או ל-Forecast.Solar
+- [x] נבדקו תנאי Open-Meteo (4.11.2026): החינמי רק ללא מנוי/פרסומות. ברגע שיש Pro בתשלום → מנוי API Standard (בערך €29 לחודש, מיליון קריאות; המחיר המדויק בטבלת Stripe באתר). אותו API, רק `customer-api.open-meteo.com` + `&apikey=`
+- [ ] לפני Pro: Cloudflare Worker כ-proxy שמחזיק את מפתח Open-Meteo כ-Secret (לא בתוך האפליקציה) ושומר תחזית במטמון לפי אזור
+- [ ] קרדיט חובה (CC BY 4.0) בתוך האפליקציה: "Weerdata: Open-Meteo.com" עם קישור
 - [x] מדיניות פרטיות מולאה (vplus studio, vplusstudio.app@gmail.com) ונבנה אתר `site/` (index + privacy) עם פריסה ל-Cloudflare → `https://zonmoment.vplusstudio.app/privacy`
 - [x] האתר נפרס ל-Cloudflare (Worker `zonmoment`, גם `zonmoment.ronmailx.workers.dev`) — 4.11.2026
 - [x] מדיניות פרטיות ופרטי קשר הוזנו ב-Play Console (ידנית — ה-API לא תומך בשדה הפרטיות)
