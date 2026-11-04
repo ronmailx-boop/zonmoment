@@ -54,7 +54,7 @@
 - [ ] סקריפט העלאה דרך ה-API (כמו `store/play_upload.py` בריפו ben-kama-ani-hayom), כדי שהגרסאות הבאות יעלו מכאן
 - [ ] סמלי ניפוי באגים ל-native (`ndk.debugSymbolLevel`) כדי לסגור את האזהרה ב-Play
 - [ ] Pro: תשלום דרך Google Play Billing (‏€1.99 לחודש או €14.99 לשנה)
-- [ ] לבדוק את הטקסטים ההולנדיים עם דובר הולנדית
+- [ ] לבדוק את הטקסטים ההולנדיים עם דובר הולנדית — קובץ למגיה: `store/proofreading/zonmoment-nl-proofreading.xlsx` (132 טקסטים, ~1,650 מילים; נבנה ע"י `build_proofreading.py`)
 
 ### אחרי ההשקה
 - [ ] מונה חיסכון חודשי
