@@ -3,22 +3,95 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zonmoment</title>
-<meta name="description" content="Zonmoment vertelt je wanneer je de wasmachine, vaatwasser of auto het beste aanzet: op je eigen zonnestroom of de goedkoopste uren.">
+<title>Zonmoment – gebruik je eigen zonnestroom</title>
+<meta name="description" content="Zonmoment vertelt je elke ochtend wanneer je de wasmachine, vaatwasser, droger of auto het beste aanzet: op je eigen zonnestroom of in de goedkoopste uren. Gratis Android-app.">
+<meta property="og:title" content="Zonmoment – gebruik je eigen zonnestroom">
+<meta property="og:description" content="Elke ochtend het beste moment voor je wasmachine, vaatwasser, droger en auto. Gratis, zonder account.">
+<meta property="og:image" content="https://zonmoment.vplusstudio.app/img/icon-512.png">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="img/icon-192.png">
 <style>
-  :root { --bg:#fffdf7; --fg:#1d1b16; --muted:#5f5a4f; --accent:#b86e00; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#16140f; --fg:#ece6d9; --muted:#b3ab9b; --accent:#ffb74d; } }
-  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, sans-serif; }
-  main { max-width:640px; margin:0 auto; padding:40px 16px; }
-  h1 { font-size:2rem; margin:0 0 .5rem; } a { color:var(--accent); } .muted { color:var(--muted); }
+  :root { --bg:#fffdf7; --fg:#1d1b16; --muted:#5f5a4f; --accent:#8a5a00; --sun:#f5b400; --card:#ffffff; --line:#eadfc8; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#16140f; --fg:#ece6d9; --muted:#b3ab9b; --accent:#ffc94d; --card:#221f18; --line:#3a3428; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color:var(--accent); }
+  .wrap { max-width:960px; margin:0 auto; padding:0 16px; }
+  header.hero { background:linear-gradient(180deg, #ffd36b, #f5a000); color:#1d1b16; }
+  .hero .wrap { padding-top:40px; padding-bottom:40px; display:grid; gap:24px; }
+  .brand { display:flex; align-items:center; gap:14px; }
+  .brand img { width:64px; height:64px; border-radius:16px; }
+  .brand span { font-size:2rem; font-weight:700; }
+  h1 { font-size:clamp(1.7rem, 5vw, 2.6rem); line-height:1.2; margin:0; }
+  .lead { font-size:1.15rem; margin:0; max-width:40em; }
+  .cta { display:inline-flex; align-items:center; gap:10px; background:#1d1b16; color:#fff; text-decoration:none; padding:12px 18px; border-radius:12px; font-weight:600; width:fit-content; }
+  .cta[aria-disabled="true"] { opacity:.85; cursor:default; }
+  .note { font-size:.95rem; margin:0; }
+  section { padding:40px 0; border-bottom:1px solid var(--line); }
+  h2 { font-size:1.5rem; margin:0 0 16px; }
+  .shots { display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; }
+  .shots img { width:220px; height:auto; flex:0 0 auto; border-radius:18px; scroll-snap-align:start; box-shadow:0 2px 10px rgba(0,0,0,.12); }
+  .steps { display:grid; gap:16px; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); padding:0; margin:0; list-style:none; counter-reset:s; }
+  .steps li { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px; counter-increment:s; }
+  .steps li::before { content:counter(s); display:inline-grid; place-items:center; width:30px; height:30px; border-radius:50%; background:var(--sun); color:#1d1b16; font-weight:700; margin-bottom:8px; }
+  .steps strong { display:block; }
+  ul.plain { padding-left:1.2em; margin:0; }
+  footer { padding:24px 0 40px; color:var(--muted); font-size:.9rem; }
 </style>
 </head>
 <body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><img src="img/icon-192.png" alt="" width="64" height="64"><span>Zonmoment</span></div>
+    <h1>Gebruik je eigen zonnestroom. Elke ochtend het beste moment.</h1>
+    <p class="lead">Vanaf 1 januari 2027 stopt de salderingsregeling. Zonmoment vertelt je wanneer je de wasmachine, vaatwasser, droger of elektrische auto het beste aanzet: op je eigen zonnestroom, of in de goedkoopste uren.</p>
+    <span class="cta" aria-disabled="true">Binnenkort in Google Play</span>
+    <p class="note">Gratis Android-app. Geen account, geen reclame, geen tracking.</p>
+  </div>
+</header>
+
 <main>
-<h1>☀️ Zonmoment</h1>
-<p>Vanaf 1 januari 2027 stopt de salderingsregeling. Zonmoment vertelt je elke ochtend wanneer je de wasmachine, vaatwasser, droger of auto het beste aanzet: op je eigen zonnestroom, of in de goedkoopste uren.</p>
-<p>Alleen voor Android. Geen account, geen tracking: je gegevens blijven op je telefoon.</p>
-<p class="muted"><a href="privacy">Privacybeleid</a> · <a href="mailto:vplusstudio.app@gmail.com">Contact</a> · vplus studio</p>
+  <section aria-labelledby="h-shots">
+    <div class="wrap">
+      <h2 id="h-shots">Zo ziet het eruit</h2>
+      <div class="shots" tabindex="0" aria-label="Schermafbeeldingen, horizontaal scrollen">
+        <img src="img/phone-1.webp" width="540" height="960" loading="lazy" alt="Beste momenten voor vandaag: wasmachine en vaatwasser van 10:00 tot 12:00 op bijna 100% zonnestroom">
+        <img src="img/phone-2.webp" width="540" height="960" loading="lazy" alt="Grafiek met de verwachte zonnestroom per uur en de stroomprijs als lijn">
+        <img src="img/phone-3.webp" width="540" height="960" loading="lazy" alt="Instellen: postcode, aantal panelen, wattpiek, dakrichting en dynamisch contract">
+        <img src="img/phone-4.webp" width="540" height="960" loading="lazy" alt="Ochtendmelding met het beste moment voor elk apparaat">
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-how">
+    <div class="wrap">
+      <h2 id="h-how">Hoe het werkt</h2>
+      <ol class="steps">
+        <li><strong>Eén keer instellen</strong>Je postcode, het aantal panelen, de richting en hoek van je dak, en welke apparaten je wilt plannen.</li>
+        <li><strong>Zon en prijs per uur</strong>Zonmoment haalt de zonnevoorspelling voor jouw dak op. Met een dynamisch contract ook de stroomprijs per uur.</li>
+        <li><strong>Elke ochtend een seintje</strong>Je ziet voor vandaag en morgen het beste tijdvak per apparaat, en hoeveel ervan op je eigen zon draait.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-privacy">
+    <div class="wrap">
+      <h2 id="h-privacy">Privacy voorop</h2>
+      <ul class="plain">
+        <li>Je gegevens blijven op je telefoon. Wij hebben geen server en geen account.</li>
+        <li>Geen advertenties, geen analytics, geen tracking.</li>
+        <li>Alleen openbare bronnen: PDOK voor je postcode, Open-Meteo voor de zon en EnergyZero voor de stroomprijzen.</li>
+      </ul>
+      <p><a href="privacy">Lees het privacybeleid</a></p>
+    </div>
+  </section>
 </main>
+
+<footer>
+  <div class="wrap">
+    <p>Zonmoment is gemaakt door vplus studio · <a href="mailto:vplusstudio.app@gmail.com">vplusstudio.app@gmail.com</a> · <a href="privacy">Privacybeleid</a></p>
+    <p>Weerdata: <a href="https://open-meteo.com/">Open-Meteo.com</a> (CC BY 4.0). Stroomprijzen: EnergyZero. Postcodes: PDOK.</p>
+  </div>
+</footer>
 </body>
 </html>
