@@ -12,12 +12,27 @@ android {
         applicationId = "app.vplusstudio.zonmoment"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
+        // CI sets VERSION_CODE (the workflow run number) so every Play upload gets a higher number.
+        versionCode = System.getenv("VERSION_CODE")?.toIntOrNull() ?: 1
         versionName = "0.1.0"
+    }
+
+    // Upload key for Google Play, passed in by CI from GitHub Secrets (never stored in the repo).
+    val keystore = System.getenv("SIGNING_KEYSTORE_PATH")
+    signingConfigs {
+        if (keystore != null) {
+            create("upload") {
+                storeFile = file(keystore)
+                storePassword = System.getenv("SIGNING_KEYSTORE_PASSWORD")
+                keyAlias = System.getenv("SIGNING_KEY_ALIAS")
+                keyPassword = System.getenv("SIGNING_KEY_PASSWORD")
+            }
+        }
     }
 
     buildTypes {
         release {
+            if (keystore != null) signingConfig = signingConfigs.getByName("upload")
             isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }

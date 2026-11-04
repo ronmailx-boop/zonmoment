@@ -35,7 +35,10 @@
 
 ### לפני ההשקה ב-Play
 - [ ] אייקון סופי וצילומי מסך לחנות בהולנדית
-- [ ] מפתח חתימה ל-release ובניית AAB (צריך להגדיר Secrets ב-GitHub)
+- [x] האפליקציה נוצרה ב-Play Console, ול-`agefox-play@red-grid-513513-t6.iam.gserviceaccount.com` יש הרשאה (בדיקה, דף חנות). אומת מה-API ב-4.11.2026
+- [x] workflow "Release build" בונה AAB חתום (versionCode = מספר הריצה), נבדק מקומית עם מפתח זמני
+- [ ] מפתח העלאה: ליצור ב-Termux ולשמור 4 Secrets (`ANDROID_KEYSTORE_BASE64`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`, `ANDROID_KEYSTORE_PASSWORD`)
+- [ ] להעלות ידנית את ה-AAB הראשון ל-Internal testing (חובה באפליקציה חדשה)
 - [ ] Pro: תשלום דרך Google Play Billing (‏€1.99 לחודש או €14.99 לשנה)
 - [ ] לבדוק את הטקסטים ההולנדיים עם דובר הולנדית
 
