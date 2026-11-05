@@ -37,6 +37,7 @@
 - [ ] לפני Pro: Cloudflare Worker כ-proxy שמחזיק את מפתח Open-Meteo כ-Secret (לא בתוך האפליקציה) ושומר תחזית במטמון לפי אזור
 - [ ] קרדיט חובה (CC BY 4.0) בתוך האפליקציה: "Weerdata: Open-Meteo.com" עם קישור
 - [x] מדיניות פרטיות מולאה (vplus studio, vplusstudio.app@gmail.com) ונבנה אתר `site/` (index + privacy) עם פריסה ל-Cloudflare → `https://zonmoment.vplusstudio.app/privacy`
+- [x] תנאי שימוש NL/EN: `site/voorwaarden.html` → https://zonmoment.vplusstudio.app/voorwaarden (+ `docs/legal/terms-of-service.md`); סטטוס עסק ב-Play: "כן" (5.11.2026)
 - [x] האתר נפרס ל-Cloudflare (Worker `zonmoment`, גם `zonmoment.ronmailx.workers.dev`) — 4.11.2026
 - [x] מדיניות פרטיות ופרטי קשר הוזנו ב-Play Console (ידנית — ה-API לא תומך בשדה הפרטיות)
 - [x] טקסטים לדף החנות בהולנדית: `store/listing-nl.md` / `store/listing-nl.json`
