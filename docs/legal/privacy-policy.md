@@ -18,6 +18,8 @@ geen server, geen account en geen toegang tot deze gegevens.
 Deze diensten ontvangen daarbij, zoals bij elke internetverbinding, je IP-adres. Wij gebruiken geen advertenties,
 geen analytics en geen tracking.
 
+**Deze website.** zonmoment.vplusstudio.app gebruikt Cloudflare Web Analytics om bezoekers te tellen, zonder cookies en zonder persoonsgegevens.
+
 **Meldingen.** Als je toestemming geeft, toont de app elke ochtend een melding. Deze wordt op je telefoon zelf gemaakt.
 
 **Je rechten.** Je kunt je gegevens op elk moment wissen door de app-gegevens te wissen of de app te verwijderen.
@@ -36,6 +38,8 @@ type and appliances. This data is stored **only on your phone**. We have no serv
 - For electricity prices the app requests public market prices from EnergyZero. No personal data is sent.
 
 As with any internet connection, these services receive your IP address. We use no ads, no analytics and no tracking.
+
+**This website.** zonmoment.vplusstudio.app uses Cloudflare Web Analytics to count visitors, without cookies or personal data.
 
 **Notifications.** If you allow it, the app shows a notification every morning. It is created on your phone.
 
