@@ -36,6 +36,7 @@
 - [x] הודעה כשמחירי מחר עוד לא פורסמו (מתפרסמים בסביבות 14:00)
 - [x] נבדקו תנאי Open-Meteo (4.11.2026): החינמי רק ללא מנוי/פרסומות. ברגע שיש Pro בתשלום → מנוי API Standard (בערך €29 לחודש, מיליון קריאות; המחיר המדויק בטבלת Stripe באתר). אותו API, רק `customer-api.open-meteo.com` + `&apikey=`
 - [x] KNMI נבדק (7.11.2026): HARMONIE-AROME Cy43 p1, רישיון CC BY 4.0 (מותר מסחרית עם קרדיט). מפתח API רשום שמור כ-network secret לסביבה (api.dataplatform.knmi.nl). קובץ לכל ריצה שעתית ~935MB tar (GRIB1 לכל שעת תחזית, ~15.7MB). כולל param 117 = קרינה גלובלית (מצטברת, timerange 4) → קרינה שעתית מהפרש; אין קרינה ישירה/מפוזרת בנפרד → צריך פירוק (Erbs) והטיה לגג. תוכנית גיבוי ל-Open-Meteo; דורש צנרת שרת
+- [ ] נשלח מייל ל-info@open-meteo.com (7.11.2026) עם 6 שאלות: חינמי לאפליקציה בלי הכנסה, קריאה ישירה מכל טלפון, מנוי כשיש Pro, proxy+מטמון, נוסח קרדיט, הנחה/חשבונית. מחכים לתשובה
 - [ ] לפני Pro: Cloudflare Worker כ-proxy שמחזיק את מפתח Open-Meteo כ-Secret (לא בתוך האפליקציה) ושומר תחזית במטמון לפי אזור
 - [ ] קרדיט חובה (CC BY 4.0) בתוך האפליקציה: "Weerdata: Open-Meteo.com" עם קישור
 - [x] מדיניות פרטיות מולאה (vplus studio, vplusstudio.app@gmail.com) ונבנה אתר `site/` (index + privacy) עם פריסה ל-Cloudflare → `https://zonmoment.vplusstudio.app/privacy`
