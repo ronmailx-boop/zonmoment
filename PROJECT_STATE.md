@@ -55,7 +55,7 @@
 ### לפני ההשקה ב-Play
 - [x] התמונות הועלו ידנית ל-Play Console ונשמרו כטיוטה (4.11.2026). ה-API חוסם שינויים בדף החנות עד ההגשה הראשונה
 - [x] אייקון חדש (שמש זורחת), Feature graphic ו-4 צילומי מסך בהולנדית: `store/images/`. נוצרים מהמסכים האמיתיים: `ZONMOMENT_SCREENSHOTS=1 ROBOLECTRIC_REPO_URL=<mirror> ./gradlew testDebugUnitTest --tests "*StoreScreenshots*"`
-- [ ] האייקון החדש נכנס לאפליקציה רק בגרסה הבאה (versionCode 2)
+- [ ] האייקון החדש (שמש זורחת) אושר ע"י המשתמש (7.11.2026); ייכנס לאפליקציה בגרסה 2
 - [x] האפליקציה נוצרה ב-Play Console, ול-`agefox-play@red-grid-513513-t6.iam.gserviceaccount.com` יש הרשאה (בדיקה, דף חנות). אומת מה-API ב-4.11.2026
 - [x] workflow "Release build" בונה AAB חתום (versionCode = מספר הריצה), נבדק מקומית עם מפתח זמני
 - [x] מפתח העלאה (PKCS12, נוצר ב-Termux עם openssl כי keytool לא עובד שם): נוצר ולשמור 4 Secrets (`ANDROID_KEYSTORE_BASE64`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`, `ANDROID_KEYSTORE_PASSWORD`)
